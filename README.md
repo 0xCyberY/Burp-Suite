@@ -213,7 +213,7 @@ ________________________________________________________________________________
  
    >#7	Simple in concept but powerful in execution, which tool allows us to reissue requests?
 
-    ✅ Proxy
+    ✅ Repeater
     
    >#8	With four modes, which tool in Burp can we use for a variety of purposes such as field fuzzing?
 
@@ -224,6 +224,9 @@ ________________________________________________________________________________
     ✅ Extender
     
 ________________________________________________________________________________________________________________________________________________________________________
+
+    <h3>[Task 5] Engage Dark Mode</h3>
+
 
 
 
