@@ -225,9 +225,30 @@ ________________________________________________________________________________
     
 ________________________________________________________________________________________________________________________________________________________________________
 
-    <h3>[Task 5] Engage Dark Mode</h3>
+   <h3>[Task 5] Engage Dark Mode</h3>
 
+Working on a project late at night? Fear no more! In this task we'll cover how to enable dark mode in Burp Suite!
 
+This task is optional! You can simply click 'Complete' on all of the questions if you'd like to skip it. This section is purely for 'quality of life' improvements while using Burp Suite throughout this room. You can see what dark mode looks like in question three of task eight.
 
+  >#1	With Burp Suite launched, let's first navigate to the 'User options' tab.
+
+  ![User options](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%205%5D/User%20options.png)
+  
+    ✅ No answer needed  
+  
+  >#2	Next, click on the 'Display' sub-tab
+
+  ![Display](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%205%5D/Display.png)
+  
+    ✅ No answer needed
+    
+  >#3	Now, click on the 'Look and feel' drop-down menu. Select 'Darcula'.
+  
+  ![Darcula](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%205%5D/Darcula.png)
+  
+    ✅ No answer needed 
+    
+_____________________________________________________________________________________________________________________
 
 
