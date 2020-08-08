@@ -44,3 +44,13 @@ Once you've got everything setup move onto our next task, Gettin' [CA] Certified
 
     ✅ No answer needed
 
+ ______________________________________________________________________________________________________________________________________________________
+ 
+ <h3>[Task 3] Gettin' [CA] Certified</h3>
+ 
+ Before we can start using our new installation (or preinstalled) Burp Suite, we'll have to fix a certificate warning. We need to install a CA certificate as BurpSuite acts as a proxy between your browser and sending it through the internet - It allows the BurpSuite Application to read and send on HTTPS data.
+ 
+ 
+ A certificate warning that will appear unless we install Burp's CA Certificate.
+
+One quick note, in this lab I'll be using Firefox and Foxy Proxy (which you can find [here](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)). I use Firefox in this instance as it's a little bit easier to work with when using Burp Suite. 
