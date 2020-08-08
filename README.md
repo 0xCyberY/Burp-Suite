@@ -688,9 +688,29 @@ Burp Suite reference documentation for [Scanner](https://portswigger.net/burp/do
 
     ✅ 12
     
-    
+__________________________________________________________________________________________________________________________________________________________________________
+
+   <h3>[Task 14] Extra Credit</h3>
+Want to learn more? You're in luck! Port Swigger, the makers of Burp Suite, have a (mostly) free online Web Security Academy! This online training is excellent for learning more about web exploitation techniques and putting your newly minted Burp skills to the test! Pretty much all of this training is free with the only exceptions being a few labs that require the professional version of Burp Suite.
+
+You can find the Port Swigger Web Security Academy training here: [https://portswigger.net/web-security](https://portswigger.net/web-security)
+
+![Image_web](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%2014%5D/web.png)
+
+In addition to Port Swigger's training, SANS offers excellent web application pentesting courses. A few of these include SANS [SEC 542](https://www.sans.org/course/web-app-penetration-testing-ethical-hacking) and [SEC 642](https://www.sans.org/course/advanced-web-app-penetration-testing-ethical-hacking). Note, these training courses are paid and can be fairly pricy. That being said, they are of incredibly high quality and are worth checking out. 
+
+![Image_sans](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%2014%5D/sans.png)
 
 
+Last but not least, you can keep learning with OWASP Juice Shop in its room here on TryHackMe! [Link](https://tryhackme.com/room/juiceshop)
+
+![Image_js](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%2014%5D/js.png)
+
+
+   >#1	Check out the provided links and keep learning!
+   
+    ✅ No answer needed
+       
 
 
 
