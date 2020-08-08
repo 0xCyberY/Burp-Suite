@@ -614,8 +614,54 @@ Per the Burp [documentation](https://portswigger.net/burp/documentation/desktop/
     
  ____________________________________________________________________________________________________________________________________________________________________
  
+   <h3>[Task 12] Installing some Mods [Extender]</h3>
  
+ Similar to adding mods to a game like Minecraft, Extender allows us to add components such as tool integrations, additional scan definitions, and more! Here are some of the most popular extensions I suggest checking out (not all of these are free but I suggest looking into them all the same):
+
+  1. [Logger++](https://portswigger.net/bappstore/470b7057b86f41c396a97903377f3d81) - Adds enhanced logging to all requests and responses from all Burp Suite tools, enable this one before you need it ;)
+  1. [Request Smuggler](https://portswigger.net/bappstore/aaaa60ef945341e8a450217a54a11646) - A relatively new extension, this allows you to attempt to smuggle requests to backend servers. See this talk by James Kettle for more details: [Link](https://www.youtube.com/watch?v=_A04msdplXs)
+  1. [Autorize](https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f) - Useful for authentication testing in web app tests. These tests typically revolve around navigating to restricted pages or issuing restricted GET requests with the session cookies of low-privileged users
+  1. [Burp Teams Server](https://github.com/Static-Flow/BurpSuite-Team-Extension) - Allows for collaboration on a Burp project amongst team members. Project details are shared in a chatroom-like format
+  1. [Retire.js](https://portswigger.net/bappstore/36238b534a78494db9bf2d03f112265c) - Adds scanner checks for outdated JavaScript libraries that contain vulnerabilities, this is a premium extension
+  1. [J2EEScan](https://portswigger.net/bappstore/7ec6d429fed04cdcb6243d8ba7358880) - Adds scanner test coverage for J2EE (java platform for web development) applications, this is a premium extension
+  1. [Request Timer](https://portswigger.net/bappstore/56675bcf2a804d3096465b2868ec1d65) - Captures response times for requests made by all Burp tools, useful for discovering timing attack vectors 
+
+A prerequisite for many of the extensions offered for Burp, we'll walk through the installation of Jython, the Java implementation of Python.
+
+![Image](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/Task%2012/0ByhGaM.png)
+
+Burp Suite reference documentation for Extender: [Link](https://portswigger.net/burp/documentation/desktop/tools/extender)
+
+Article on some of the top extensions for Burp Suite: [Link](https://portswigger.net/solutions/penetration-testing/penetration-testing-tools)
     
+ 
+   >#1	To start, let's go ahead and switch over to the Options sub-tab of the Extender tab. 
+
+    ✅ No answer needed
+    
+   >#2	Scroll down until you reach the 'Python Environment' section. Note, Burp requires the standalone edition of Jython.
+   
+    ✅ No answer needed
+    
+   >#3	Download the standalone version of Jython from here: [Link](https://www.jython.org/download.html) - I suggest saving this or moving it to your Documents folder
+
+    ✅ No answer needed
+    
+   >#4	Return back to Burp and hit 'Select file' under the Python Environment subsection for Jython standalone. Navigate to where you just downloaded this file and select it. 
+
+    ✅ No answer needed
+    
+   >#5	Burp is now set to go for installing extensions. Switch to the BApp Store sub-tab of Extender and look through the various extensions offered.
+   
+    ✅ No answer needed
+    
+   >#6	Which extension allows us too bookmark various requests?
+
+    ✅ Bookmarks
+
+___________________________________________________________________________________________________________________________________________________________________
+
+
 
 
 
