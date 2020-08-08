@@ -2,7 +2,7 @@
 
 <h1>This is writeup for Burp Suite room in tryhackme.com</h1>
 
-1. __Tasks__
+<h2>1. __Tasks__
   
   * [Task 1] Intro
   
@@ -14,7 +14,7 @@ The virtual machine used in this room (OWASP JuiceShop) can be installed from th
 
 Prior to attempting this room, I highly recommend checking out the ['Web Fundamentals'](https://tryhackme.com/room/webfundamentals) room by [NinjaJc01](https://tryhackme.com/p/NinjaJc01). If you are familiar with basic web request structure and SQL injection, you're already set!
   
-  *#1	Read the overview and continue on into installation!*
+  <h3>#1	Read the overview and continue on into installation!
  - [x] `No answer needed`
  - [x] This is a complete item
 
