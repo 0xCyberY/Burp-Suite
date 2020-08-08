@@ -127,8 +127,49 @@ Go ahead and install this now!
   
   ![image_selectBurp](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/selectBurp.png)
   
+  In the image above Burp isn't selected. Make sure it is in yours!
+
+Next, we'll move onto adding the certificate for Burp!
+
+
+    ✅ No answer needed
+    
+  >#8	With Firefox, navigate to the following address: http://localhost:8080
   
+    ✅ No answer needed
+    
+  >#9	You'll be greeted with the following website:
+
+![imageBursuitecom...](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/BurpsuitCom...png)
+
+Click on 'CA Certificate' in the top right to download and save the CA Certificate.
+
+    ✅ No answer needed
+    
+  >#10	Now that we've downloaded the CA Certificate, move over to the settings menu in Firefox. Search for 'Certificates' in the search bar. 
   
+  ![Image_search result](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/search%20result.png)
+  
+  Click on 'View Certificates'
+  
+    ✅ No answer needed
+    
+   >#11	Next, in the Authorities tab click on 'Import'
+
+    ✅ No answer needed
+
+   >#12	Navigate to where you saved the CA Certificate we downloaded previously. Click 'OK' once you've selected this certificate.
+  
+    ✅ No answer needed
+    
+   >#13	Finally, select the following two options seen in this photo:
+   
+![Image_download cer](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/download%20Cert.png)
+
+Select 'OK' once you've done this. Congrats, we've now installed the Burp Suite CA Certificate!
+
+    ✅ No answer needed
+
 
 
 
