@@ -4,7 +4,7 @@
 
 <h2>1. __Tasks__</h2>
   
-  * [Task 1] Intro
+  <h3>[Task 1] Intro</h3>
   
   Burp Suite, a framework of web application pentesting tools, is widely regarded as the de facto tool to use when performing web app testing. Throughout this room, we'll take a look at the basics of installing and using this tool as well as it's various major components. Reference links to the associated documentation per section have been provided at the bottom of most tasks throughout this room. 
   
@@ -20,7 +20,7 @@ Prior to attempting this room, I highly recommend checking out the ['Web Fundame
  
  ______________________________________________________________________________________________________________________________________________________
  
-  * [Task 2] Installation
+   <h3>[Task 2] Installation</h3>
   
 Before we can dive into the pretty amazing tool that is Burp Suite, we'll first have to install it. Lucky for us, if you're doing this room on Kali Linux you'll already have Burp Suite installed. Since this room is entirely do-able on Windows as well, we'll briefly touch on obtaining Burp Suite (community edition) for any system as it's fairly painless. _You can also use deploy your own [in-browser machine](https://tryhackme.com/my-machine) with BurpSuite already installed!_
 
