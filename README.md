@@ -16,7 +16,7 @@ Prior to attempting this room, I highly recommend checking out the ['Web Fundame
   
  >#1	Read the overview and continue on into installation!>]<
  
-    🔨 Answes `No answer needed`  `
+    ✅ No answer needed
  ______________________________________________________________________________________________________________________________________________________
  
    <h3>[Task 2] Installation</h3>
@@ -33,14 +33,14 @@ Burp Suite Getting Started Documentation: [Link](https://portswigger.net/burp/do
 
  >#1	If you'll be installing Burp (as it's commonly referred to) from scratch, you'll need to first visit this link: https://portswigger.net/burp/communitydownload
 
-    -  `No answer needed`
+    ✅ No answer needed
     
  >#2	Once you've reached the Port Swigger downloads page, go ahead and download the appropriate version for your operating system
     
-    -  `No answer needed`
+    ✅ No answer needed
     
  >#3	Burp Suite requires Java JRE in order to run. Download and install Java here: https://www.java.com/en/download/
 Once you've got everything setup move onto our next task, Gettin' [CA] Certified!
 
-    -  `No answer needed`
+    ✅ No answer needed
 
