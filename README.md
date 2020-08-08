@@ -251,4 +251,25 @@ This task is optional! You can simply click 'Complete' on all of the questions i
     
 _____________________________________________________________________________________________________________________
 
+   <h3>[Task 6] Proxy</h3>
+   
+ Generally speaking, proxy servers by definition allow us to relay our traffic through an alternative route to the internet. This can be done for a variety of reasons ranging from educational filtering (common in schools where restricted content must be blocked) to accessing content that may be otherwise unavailable due to region locking or a ban. Using a proxy, however, for web application testing allows us to view and modify traffic inline at a granular level. Throughout this task, we'll explore the major components of the Burp proxy including interception, request history, and the various configuration options we have access to. 
+
+![proxy](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%206%5D%20Proxy/proxy.png)
+
+
+Basic diagram of how communications are relayed through a proxy - Wikipedia - Proxy Servers
+
+In task three, Gettin' [CA] Certified, we configured our web traffic to route through our instance of Burp Suite. By default, Burp will be set to 'intercept' our traffic. This means a few things:
+
+1. Requests will by default require our authorization to be sent.
+
+2. We can modify our requests in-line similar to what you might see in a man-in-the-middle attack and then send them on.
+
+3. We can also drop requests we don't want to be sent. This can be useful to see the request attempt after clicking a button or performing another action on the website. 
+
+4. And last but not least, we can send these requests to other tools such as Repeater and Intruder for modification and manipulation to induce vulnerabilities. 
+
+Burp Suite reference documentation for Proxy: [Link](https://portswigger.net/burp/documentation/desktop/tools/proxy)
+
 
