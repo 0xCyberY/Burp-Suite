@@ -66,7 +66,7 @@ One quick note, in this lab I'll be using Firefox and Foxy Proxy (which you can 
     
   >#2	Once you've launched Burp, you'll be greeted with the following screen:
 
-![lunched](https://github.com/abdullah-baghuth/Burp-Suite)
+![image_lunched](https://github.com/abdullah-baghuth/Burp-Suite)
 
 Once this pops-up, click 'Temporary project' and then 'Next'.
 
