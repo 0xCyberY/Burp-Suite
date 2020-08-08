@@ -66,7 +66,7 @@ One quick note, in this lab I'll be using Firefox and Foxy Proxy (which you can 
     
   >#2	Once you've launched Burp, you'll be greeted with the following screen:
 
-![image_lunched](https://github.com/abdullah-baghuth/Burp-Suite)
+![image_lunched](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/lunched%20burp.png)
 
 Once this pops-up, click 'Temporary project' and then 'Next'.
 
@@ -79,5 +79,7 @@ Once this pops-up, click 'Temporary project' and then 'Next'.
  ![image_defaults](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/defaults.png)
  
  This option is included as it can be incredibly useful to create a custom configuration file for your proxy or other settings, especially depending on how your network configuration and/or if Burp Suite is being launched remotely such as via [x11 forwarding](https://www.youtube.com/watch?v=auePeI8vZA8) 
+ 
+ 
  
 
