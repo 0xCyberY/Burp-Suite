@@ -311,3 +311,62 @@ To complete this task you need to connect to the TryHackMe network through [Open
     
 _____________________________________________________________________________________________________________________________________________________________
 
+   <h3>[Task 7] Target Definition</h3>
+
+Perhaps the most important feature in Burp Suite, we'll now be turning our focus to the Target tab!
+The Target tab in Burp allows us to perform arguably some of the most important parts of a web application penetration test: defining our scope, viewing a site map, and specifying our issue definitions (although this is more useful within report generation and scanning). 
+
+When starting a web application test you'll very likely be provided a few things:
+
+- The application URL (hopefully for dev/test and not prod)
+- A list of the different user roles within the application
+- Various test accounts and associated credentials for those accounts
+- A list of pieces/forms in the application which are out-of-scope for testing and should be avoided
+
+From this information, we can now start to build our scope within Burp, something which is incredibly important in the case we are planning on performing any automated testing. Typically this is done in a tiered approach wherein we work our way up from the lowest privileged account (this includes unauthenticated access), browsing the site as a normal user would. Browsing like this to discover the full extent of the site is commonly referenced as the 'happy path'. Following the creation of a site map via browsing the happy path, we can go through and start removing various items from the scope. These items typically fit one of these criteria:
+
+- The item (page, form, etc) has been designated as out of scope in the provided documentation from the client
+- Automated exploitation of the item (especially in a credentialed manner) would cause a huge mess (like sending hundreds of password reset emails - If you've done a web app professionally you've probably done this at one point)
+- Automated exploitation of the item (especially in a credentialed manner) would lead to damaging and potentially crashing the web app
+
+Once we've removed any restricted or otherwise potentially dangerous items from our scope, we can move onto other areas of testing with the various tools within Burp Suite.
+
+Burp Suite reference documentation for Target: [Link](https://portswigger.net/burp/documentation/desktop/tools/target)
+
+   >#1	Before leaving the Proxy tab, switch Intercept to disabled. We'll still see the pages we navigate to in our history and the target tab, just having Intercept constantly stopping our requests for this next bit will get old fast.
+
+    ✅ No answer needed 
+    
+   >#2	Navigate to the Target tab in Burp. In our last task, Proxy, we browsed to the website on our target machine (in this case OWASP Juice Shop). Find our target site in this list and right-click on it. Select 'Add to scope'. 
+   
+    ✅ No answer needed
+    
+   >#3	Clicking 'Add to scope' will trigger a pop-up. This will stop Burp from sending out-of-scope items to our site map.
+
+    ✅ No answer needed
+    
+   >#4	Select 'Yes' to close the popup.
+
+    ✅ No answer needed
+    
+   >#5 Browse around the rest of the application to build out our page structure in the target tab. Once you've visited most of the pages of the site return to Burp Suite and expand the various levels of the application directory. What do we call this representation of the collective web application?
+   
+    ✅ site map
+    
+   >#6	What is the term for browsing the application as a normal user prior to examining it further?
+   
+    ✅ happy path
+    
+   >#7	One last thing before moving on. Within the target tab, you may have noticed a sub-tab for issue definitions. Click into that now.
+   
+    ✅ No answer needed
+    
+   >#8	The issue definitions found here are how Burp Suite defines issues within reporting. While getting started, these issue definitions can be particularly helpful for understanding and categorizing various findings we might have. Which poisoning issue arises when an application behind a cache process input that is not included in the cache key?
+   
+    ✅ Web cache poisoning
+    
+  ___________________________________________________________________________________________________________________________________________________________________
+  
+  
+    
+
