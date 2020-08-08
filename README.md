@@ -112,6 +112,23 @@ Go ahead and install this now!
   ![Image_extensions](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/extensions.png)
   
   After that, click on 'Options'.
+  
+  ![image_options](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/options.png)
+  
+  After that, click 'Add' in the top left.
+  
+  ![image_ADD](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/ADD.png)
+  
+  Enter in the following settings and then click 'Save'
+  
+  ![image_edit](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/Edit.png)
+  
+  Finally, click on the FoxyProxy extension icon again and select 'Burp'.
+  
+  ![image_selectBurp](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/selectBurp.png)
+  
+  
+  
 
 
 
