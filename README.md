@@ -16,7 +16,7 @@ Prior to attempting this room, I highly recommend checking out the ['Web Fundame
   
 1. >#1	Read the overview and continue on into installation!
   
- - [x] `No answer needed`
+    - [x] `No answer needed`
  
  ______________________________________________________________________________________________________________________________________________________
  
@@ -34,4 +34,4 @@ Burp Suite Getting Started Documentation: [Link](https://portswigger.net/burp/do
 
 1. >#1	If you'll be installing Burp (as it's commonly referred to) from scratch, you'll need to first visit this link: https://portswigger.net/burp/communitydownload
 
- - [x] `No answer needed`
+    - [x] `No answer needed`
