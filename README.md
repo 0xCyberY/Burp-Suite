@@ -375,35 +375,36 @@ Burp Suite reference documentation for Repeater: [Link](https://portswigger.net/
 
 
    >#1	To start, click 'Account' (this might be 'Login' depending on the version of Juice Shop) in the top right corner of Juice Shop in order to navigate to the login page.
-   ![Image-Account]()
+   
+   ![Image-Account](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/account.png)
    
    
     ✅ No answer needed
     
    >#2	Try logging in with invalid credentials. What error is generated when login fails?
-   ![image_login]
+   ![image_login](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/login.png)
    
     ✅ Invalid email or password.
     
    >#3	But wait, didn't we want to send that request to Repeater? Even though we didn't send it to Repeater initially via intercept, we can still find the request in our history. Switch over to the HTTP sub-tab of Proxy. Look through these requests until you find our failed login attempt. Right-click on this request and send it to Repeater and then send it to Intruder, too!
-   ![image_req]
+   ![image_req](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/req.png)
    
     ✅ No answer needed   
 
    >#4	Now that we've sent the request to Repeater, let's try adjusting the request such that we are sending a single quote (') as both the email and password. What error is generated from this request?
-   ![Image_raw]()
+   ![Image_raw](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/raw.png)
    
     ✅ SQLITE_ERROR
     
    >#5	Now that we've leveraged Repeater to gain proof of concept that Juice Shop's login is vulnerable to SQLi, let's try something a little more mischievous and attempt to leave a devastating zero-star review. First, click on the drawer button in the top-left of the application. If this isn't present for you, just skip to the next question.
 
-![Image_]()
+![Image_top-left](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/top-left.png)
 
     ✅ No answer needed
     
    >#6	Next, click on 'Customer Feedback' (depending on the version of Juice Shop this also might be along the top of the page next to 'Login' under 'Contact Us')
    
-  ![Image_feedback]()
+  ![Image_feedback](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/Feedback.png)
   
     ✅ No answer needed
     
