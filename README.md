@@ -376,13 +376,14 @@ Burp Suite reference documentation for Repeater: [Link](https://portswigger.net/
 
    >#1	To start, click 'Account' (this might be 'Login' depending on the version of Juice Shop) in the top right corner of Juice Shop in order to navigate to the login page.
    
- ![Image-Account](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/account.png)
+   ![Image-Account](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/account.png)
    
    
     ✅ No answer needed
     
    >#2	Try logging in with invalid credentials. What error is generated when login fails?
- ![image_login](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/login.png)
+   
+   ![image_login](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/login.png)
    
     ✅ Invalid email or password.
     
@@ -392,7 +393,8 @@ Burp Suite reference documentation for Repeater: [Link](https://portswigger.net/
     ✅ No answer needed   
 
    >#4	Now that we've sent the request to Repeater, let's try adjusting the request such that we are sending a single quote (') as both the email and password. What error is generated from this request?
- ![Image_raw](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/raw.png)
+
+![Image_raw](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/raw.png)
    
     ✅ SQLITE_ERROR
     
