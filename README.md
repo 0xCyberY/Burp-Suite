@@ -367,6 +367,57 @@ Burp Suite reference documentation for Target: [Link](https://portswigger.net/bu
     
   ___________________________________________________________________________________________________________________________________________________________________
   
-  
+   <h3>[Task 8] Puttin' it on Repeat[er]</h3>
     
+As the name suggests, Repeater allows us to repeat requests we've already made. These requests can either be reissued as-is or with modifications. In contrast to Intruder, Repeater is typically used for the purposes of experimentation or more fine-tuned exploitation wherein automation may not be desired. We'll be checking out Repeater with the goal of finding a proof of concept demonstrating that Juice Shop is vulnerable to SQL injection.
+
+Burp Suite reference documentation for Repeater: [Link](https://portswigger.net/burp/documentation/desktop/tools/repeater)
+
+
+   >#1	To start, click 'Account' (this might be 'Login' depending on the version of Juice Shop) in the top right corner of Juice Shop in order to navigate to the login page.
+   ![Image-Account]()
+   
+   
+    ✅ No answer needed
+    
+   >#2	Try logging in with invalid credentials. What error is generated when login fails?
+   ![image_login]
+   
+    ✅ Invalid email or password.
+    
+   >#3	But wait, didn't we want to send that request to Repeater? Even though we didn't send it to Repeater initially via intercept, we can still find the request in our history. Switch over to the HTTP sub-tab of Proxy. Look through these requests until you find our failed login attempt. Right-click on this request and send it to Repeater and then send it to Intruder, too!
+   ![image_req]
+   
+    ✅ No answer needed   
+
+   >#4	Now that we've sent the request to Repeater, let's try adjusting the request such that we are sending a single quote (') as both the email and password. What error is generated from this request?
+   ![Image_raw]()
+   
+    ✅ SQLITE_ERROR
+    
+   >#5	Now that we've leveraged Repeater to gain proof of concept that Juice Shop's login is vulnerable to SQLi, let's try something a little more mischievous and attempt to leave a devastating zero-star review. First, click on the drawer button in the top-left of the application. If this isn't present for you, just skip to the next question.
+
+![Image_]()
+
+    ✅ No answer needed
+    
+   >#6	Next, click on 'Customer Feedback' (depending on the version of Juice Shop this also might be along the top of the page next to 'Login' under 'Contact Us')
+   
+  ![Image_feedback]()
+  
+    ✅ No answer needed
+    
+   >#7	With the Burp proxy on submit feedback. Once this is done, find the POST request in your HTTP History in Burp and send it to Repeater.
+
+    ✅ No answer needed
+    
+   >#8	What field do we have to modify in order to submit a zero-star review?
+   
+    ✅ rating  
+    
+   >#9	Submit a zero-star review and complete this challenge in Juice Shop!
+   
+    ✅ No answer needed
+
+
 
