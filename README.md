@@ -18,5 +18,10 @@ Prior to attempting this room, I highly recommend checking out the ['Web Fundame
   
  - [x] `No answer needed`
  
- - [x] This is a complete item
+ 
+  * [Task 2] Installation
+  
+Before we can dive into the pretty amazing tool that is Burp Suite, we'll first have to install it. Lucky for us, if you're doing this room on Kali Linux you'll already have Burp Suite installed. Since this room is entirely do-able on Windows as well, we'll briefly touch on obtaining Burp Suite (community edition) for any system as it's fairly painless. _You can also use deploy your own [in-browser machine](https://tryhackme.com/my-machine) with BurpSuite already installed!_
+
+If you'll be installing Burp (as it's commonly referred to) from scratch, you'll need to first visit this [link](https://portswigger.net/burp/communitydownload)
 
