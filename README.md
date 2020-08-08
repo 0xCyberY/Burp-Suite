@@ -80,6 +80,22 @@ Once this pops-up, click 'Temporary project' and then 'Next'.
  
  This option is included as it can be incredibly useful to create a custom configuration file for your proxy or other settings, especially depending on how your network configuration and/or if Burp Suite is being launched remotely such as via [x11 forwarding](https://www.youtube.com/watch?v=auePeI8vZA8) 
  
+    ✅ No answer needed
+    
+  >#4	Finally, let's go ahead and Start Burp! Click 'Start Burp' now!
+  
+    ✅ No answer needed
+    
+   >#5	You'll now see a screen that looks similar to this:
+   
+ ![Image_running burp](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/running%20burp.png)
  
- 
+ Since we now have Burp Suite running, the proxy service will have started by default with it. In order to fully leverage this proxy, we'll have to install the CA certificate included with Burp Suite (otherwise we won't be able to load anything with SSL). To do this, let's launch Firefox now!
+
+*You can do this part with your browser of choice, however, I'll be using Firefox for this room.
+   
+   
+    ✅ No answer needed
+
+
 
