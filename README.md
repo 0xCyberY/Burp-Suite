@@ -64,4 +64,20 @@ One quick note, in this lab I'll be using Firefox and Foxy Proxy (which you can 
   
     ✅ No answer needed
     
+  >#2	Once you've launched Burp, you'll be greeted with the following screen:
+
+![lunched](https://github.com/abdullah-baghuth/Burp-Suite)
+
+Once this pops-up, click 'Temporary project' and then 'Next'.
+
+*Now as you likely noticed both 'New project on disk' and 'Open existing project' are both grayed out. As annotated at the top of this window saving projects is a feature associated with Burp Suite Professional as it's pretty common to save and come back to a multi-day web application test. 
+
+    ✅ No answer needed
+    
+  >#3	Next, we'll be prompted to ask for what configuration we'd like to use. For now, select 'Use Burp defaults'.
+  
+ ![image_defaults](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/defaults.png)
+ 
+ This option is included as it can be incredibly useful to create a custom configuration file for your proxy or other settings, especially depending on how your network configuration and/or if Burp Suite is being launched remotely such as via [x11 forwarding](https://www.youtube.com/watch?v=auePeI8vZA8) 
+ 
 
