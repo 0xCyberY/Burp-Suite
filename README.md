@@ -662,6 +662,34 @@ Article on some of the top extensions for Burp Suite: [Link](https://portswigger
 ___________________________________________________________________________________________________________________________________________________________________
 
 
+   <h3>[Task 13] But wait, there's more!</h3>
+
+Before we conclude, let's take a quick look into the features that Burp Suite Professional offers: The Burp Suite Scanner and Collaborator Client!
+
+[Download](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%2013%5D/juiceshop-report.html)
+
+Arguably the most powerful feature in Burp Suite, the Burp Suite Scanner allows us to passively and actively scan and spider the website we are testing for vulnerabilities. In Burp 2.0's task-based model, we can launch these scans (Scanner and Spider) from the dashboard and let them run in the background while we continue to examine the web app. In this case, I've run an unauthenticated scan against Juice Shop and have attached it to this task. These reports can provide a starting place for further enumeration and exploitation via the other tools in Burp Suite.
+
+![Image_summary](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%2013%5D/summar.png)
+
+A Preview of the Report Attached to this Task Created with Burp Professional
+
+Commonly used in manual tests, Burp Collaborator Client allows us to gain insight into issues that may otherwise seem to produce no output. Often during testing, we may come across items which, either due to timing/slowness of the web app or a lack of any reaction, are likely vulnerable but don't produce any sure-fire indicators. With Burp Collaborator, however, we can produce out-of-band alerts via generating payloads that reach back to Burp Suite's servers for us.
+
+![Image_collaborator](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%2013%5D/Collabrator.png)
+
+Burp Suite reference documentation for [Scanner](https://portswigger.net/burp/documentation/scanner) and [Collaborator Client](https://portswigger.net/burp/documentation/desktop/tools/collaborator-client)
+
+   >#1	Download the report attached to this task. What is the only critical issue?
+
+    ✅ Cross-origin resource sharing: arbitrary origin trusted
+    
+   >#2	How many 'Certain' low issues did Burp find?
+
+    ✅ 12
+    
+    
+
 
 
 
