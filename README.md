@@ -50,6 +50,7 @@ Once you've got everything setup move onto our next task, Gettin' [CA] Certified
  
  Before we can start using our new installation (or preinstalled) Burp Suite, we'll have to fix a certificate warning. We need to install a CA certificate as BurpSuite acts as a proxy between your browser and sending it through the internet - It allows the BurpSuite Application to read and send on HTTPS data.
  
+ ![connection](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/connectiom%20!.png)
  
  A certificate warning that will appear unless we install Burp's CA Certificate.
 
