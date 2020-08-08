@@ -18,6 +18,7 @@ Prior to attempting this room, I highly recommend checking out the ['Web Fundame
   
  - [x] `No answer needed`
  
+ ______________________________________________________________________________________________________________________________________________________
  
   * [Task 2] Installation
   
