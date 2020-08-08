@@ -16,5 +16,5 @@ Prior to attempting this room, I highly recommend checking out the ['Web Fundame
   
   <h3>#1	Read the overview and continue on into installation!</h3>
  - [x] `No answer needed`
- - [x] This is a complete item
+ 
 
