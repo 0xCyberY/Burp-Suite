@@ -376,23 +376,23 @@ Burp Suite reference documentation for Repeater: [Link](https://portswigger.net/
 
    >#1	To start, click 'Account' (this might be 'Login' depending on the version of Juice Shop) in the top right corner of Juice Shop in order to navigate to the login page.
    
-   ![Image-Account](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/account.png)
+ ![Image-Account](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/account.png)
    
    
     ✅ No answer needed
     
    >#2	Try logging in with invalid credentials. What error is generated when login fails?
-   ![image_login](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/login.png)
+ ![image_login](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/login.png)
    
     ✅ Invalid email or password.
     
    >#3	But wait, didn't we want to send that request to Repeater? Even though we didn't send it to Repeater initially via intercept, we can still find the request in our history. Switch over to the HTTP sub-tab of Proxy. Look through these requests until you find our failed login attempt. Right-click on this request and send it to Repeater and then send it to Intruder, too!
-   ![image_req](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/req.png)
+ ![image_req](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/req.png)
    
     ✅ No answer needed   
 
    >#4	Now that we've sent the request to Repeater, let's try adjusting the request such that we are sending a single quote (') as both the email and password. What error is generated from this request?
-   ![Image_raw](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/raw.png)
+ ![Image_raw](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/raw.png)
    
     ✅ SQLITE_ERROR
     
@@ -404,7 +404,7 @@ Burp Suite reference documentation for Repeater: [Link](https://portswigger.net/
     
    >#6	Next, click on 'Customer Feedback' (depending on the version of Juice Shop this also might be along the top of the page next to 'Login' under 'Contact Us')
    
-  ![Image_feedback](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/Feedback.png)
+![Image_feedback](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/Feedback.png)
   
     ✅ No answer needed
     
@@ -442,7 +442,7 @@ To accomplish these various use cases, Intruder has four different attack types:
 
 4. Cluster Bomb - The Cluster Bomb attack type allows us to use multiple payload sets (one per position selected) and iterate through all combinations of the payload lists we provide. For example, if we selected two positions (say a username field and a password field), we can provide a username and password payload list. Intruder will then cycle through the combinations of usernames and passwords, resulting in a total number of combinations equalling usernames x passwords. Do note, this can get pretty lengthy if you are using the community edition of Burp. 
 
-![image_sniper]()
+![image_sniper](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%209%5D/sniper.png)
 Intruder Attack Type Selection
 
 For our purposes, we'll be returning to the SQL injection vulnerability we previously discovered through using Repeater. 
@@ -471,37 +471,37 @@ Burp Suite reference documentation for Intruder: [Link](https://portswigger.net/
     
    >#6	Return to the Intruder in Burp. In our previous task, we passed our failed login attempt to both Repeater and Intruder for further examination. Open up the Positions sub-tab in the Intruder tab with this request now and verify that 'Sniper' is selected as our attack type.
    
-  ![Image_attck_type]()
+  ![Image_attck_type](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%209%5D/attck_type.png)
   
      ✅ No answer needed
      
    >#7	Burp attempts to automatically highlight possible fields of interest for Intruder, however, it doesn't have it quite right for what we'll be looking at in this instance. Hit 'Clear' on the right-hand side to clear all selected fields.
 
-![Image_clear]()
+![Image_clear](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%209%5D/clear.png)
 
      ✅ No answer needed
      
    >#8	Next, let's highlight the email field between the double quotes ("). This will be whatever you entered in the email field for our previous failed login attempt.
    
-  ![image-login attempt]()
+  ![image-login attempt](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%209%5D/login%20attempt.png)
 
      ✅ No answer needed
      
    >#9	Now click 'Add' to select our email field as a position for our payloads.
    
- ![image_add]()
+ ![image_add](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%209%5D/add.png)
  
      ✅ No answer needed
      
    >#10	Next, let's switch to the payloads sub-tab of Intruder. Once there, hit 'Load' and select the wordlist you previously downloaded in question five that is attached to this task.
    
-   ![image_payload]()
+   ![image_payload](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%209%5D/payload.png)
    
      ✅ No answer needed
      
    >#11	Almost there! Scroll down and uncheck 'URL-encode these characters'. We don't want to have the characters sent in our payloads to be encoded as they otherwise won't be recognized by SQL.
      
-  ![Image_Encoding]
+  ![Image_Encoding](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%209%5D/Encoding.png)
   
      ✅ No answer needed
      
