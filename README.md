@@ -28,6 +28,9 @@ If you'll be installing Burp (as it's commonly referred to) from scratch, you'll
 
 ------------------------------------![Image2](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/burp2.png)------------------------------------------
 
+![GitHub Logo](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/burp2.png)
+Format: ![Alt Text](url)
+
 We'll use the Burp Suite Community Edition throughout this lab, however, I'll be covering some paid features briefly as well to help you prepare for eventually using the Professional version.
 
 Burp Suite Getting Started Documentation: [Link](https://portswigger.net/burp/documentation/desktop/getting-started)
