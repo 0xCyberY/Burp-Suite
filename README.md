@@ -420,5 +420,92 @@ Burp Suite reference documentation for Repeater: [Link](https://portswigger.net/
    
     ✅ No answer needed
 
+________________________________________________________________________________________________________________________________________________________
 
+   <h3>[Task 9] Help! There's an Intruder!</h3>
 
+Arguably the most powerful tool in Burp Suite, Intruder can be used for many things ranging from fuzzing to brute-forcing. At its core, Intruder serves one purpose: automation. 
+
+While Repeater best handles experimentation or one-off testing, Intruder is meant for repeat testing once a proof of concept has been established. Per the [Burp Suite documentation](https://portswigger.net/burp/documentation/desktop/tools/intruder/using), some common uses are as follows:
+
+- Enumerating identifiers such as usernames, cycling through predictable session/password recovery tokens, and attempting simple password guessing
+- Harvesting useful data from user profiles or other pages of interest via grepping our responses
+- Fuzzing for vulnerabilities such as SQL injection, cross-site scripting (XSS), and file path traversal
+
+To accomplish these various use cases, Intruder has four different attack types:
+
+1. Sniper - The most popular attack type, this cycles through our selected positions, putting the next available payload (item from our wordlist) in each position in turn. This uses only one set of payloads (one wordlist).
+
+2. Battering Ram - Similar to Sniper, Battering Ram uses only one set of payloads. Unlike Sniper, Battering Ram puts every payload into every selected position. Think about how a battering ram makes contact across a large surface with a single surface, hence the name battering ram for this attack type.
+
+3. Pitchfork - The Pitchfork attack type allows us to use multiple payload sets (one per position selected) and iterate through both payload sets simultaneously. For example, if we selected two positions (say a username field and a password field), we can provide a username and password payload list. Intruder will then cycle through the combinations of usernames and passwords, resulting in a total number of combinations equalling the smallest payload set provided. 
+
+4. Cluster Bomb - The Cluster Bomb attack type allows us to use multiple payload sets (one per position selected) and iterate through all combinations of the payload lists we provide. For example, if we selected two positions (say a username field and a password field), we can provide a username and password payload list. Intruder will then cycle through the combinations of usernames and passwords, resulting in a total number of combinations equalling usernames x passwords. Do note, this can get pretty lengthy if you are using the community edition of Burp. 
+
+![image_sniper]()
+Intruder Attack Type Selection
+
+For our purposes, we'll be returning to the SQL injection vulnerability we previously discovered through using Repeater. 
+
+Burp Suite reference documentation for Intruder: [Link](https://portswigger.net/burp/documentation/desktop/tools/intruder)
+
+   >#1	Which attack type allows us to select multiple payload sets (one per position) and iterate through them simultaneously?
+
+    ✅ Pitchfork
+    
+   >#2	How about the attack type which allows us to use one payload set in every single position we've selected simultaneously?
+   
+    ✅ Battering Ram
+    
+   >#3	Which attack type allows us to select multiple payload sets (one per position) and iterate through all possible combinations?
+   
+    ✅ Cluster Bomb
+    
+   >#4	Perhaps the most commonly used, which attack type allows us to cycle through our payload set, putting the next available payload in each position in turn?
+   
+    ✅ Sniper
+    
+   >#5	Download the wordlist attached to this room, this is a shortened version of the fuzzdb SQLi platform detection list.
+   
+    ✅ No answer needed
+    
+   >#6	Return to the Intruder in Burp. In our previous task, we passed our failed login attempt to both Repeater and Intruder for further examination. Open up the Positions sub-tab in the Intruder tab with this request now and verify that 'Sniper' is selected as our attack type.
+   
+  ![Image_attck_type]()
+  
+     ✅ No answer needed
+     
+   >#7	Burp attempts to automatically highlight possible fields of interest for Intruder, however, it doesn't have it quite right for what we'll be looking at in this instance. Hit 'Clear' on the right-hand side to clear all selected fields.
+
+![Image_clear]()
+
+     ✅ No answer needed
+     
+   >#8	Next, let's highlight the email field between the double quotes ("). This will be whatever you entered in the email field for our previous failed login attempt.
+   
+  ![image-login attempt]()
+
+     ✅ No answer needed
+     
+   >#9	Now click 'Add' to select our email field as a position for our payloads.
+   
+ ![image_add]()
+ 
+     ✅ No answer needed
+     
+   >#10	Next, let's switch to the payloads sub-tab of Intruder. Once there, hit 'Load' and select the wordlist you previously downloaded in question five that is attached to this task.
+   
+   ![image_payload]()
+   
+     ✅ No answer needed
+     
+   >#11	Almost there! Scroll down and uncheck 'URL-encode these characters'. We don't want to have the characters sent in our payloads to be encoded as they otherwise won't be recognized by SQL.
+     
+  ![Image_Encoding]
+  
+     ✅ No answer needed
+     
+   >#12	Finally, click 'Start attack'. What is the first payload that returns a 200 status code, showing that we have successfully bypassed authentication?
+   
+     ✅ a' OR 1=1--
+   
