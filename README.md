@@ -388,7 +388,8 @@ Burp Suite reference documentation for Repeater: [Link](https://portswigger.net/
     ✅ Invalid email or password.
     
    >#3	But wait, didn't we want to send that request to Repeater? Even though we didn't send it to Repeater initially via intercept, we can still find the request in our history. Switch over to the HTTP sub-tab of Proxy. Look through these requests until you find our failed login attempt. Right-click on this request and send it to Repeater and then send it to Intruder, too!
- ![image_req](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/req.png)
+ 
+![image_req](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%208%5D/req.png)
    
     ✅ No answer needed   
 
@@ -427,6 +428,8 @@ ________________________________________________________________________________
    <h3>[Task 9] Help! There's an Intruder!</h3>
 
 Arguably the most powerful tool in Burp Suite, Intruder can be used for many things ranging from fuzzing to brute-forcing. At its core, Intruder serves one purpose: automation. 
+
+[Download](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%209%5D/xplatform-shortened.txt)
 
 While Repeater best handles experimentation or one-off testing, Intruder is meant for repeat testing once a proof of concept has been established. Per the [Burp Suite documentation](https://portswigger.net/burp/documentation/desktop/tools/intruder/using), some common uses are as follows:
 
@@ -511,3 +514,59 @@ Burp Suite reference documentation for Intruder: [Link](https://portswigger.net/
    
      ✅ a' OR 1=1--
    
+______________________________________________________________________________________________________________________________________________________________________
+
+   <h3>[Task 10] As it turns out the machines are better at math than us</h3>
+   
+While not as commonly used in a practice environment, Sequencer represents a core tool in a proper web application pentest. Burp's Sequencer, [per the Burp documentation](https://portswigger.net/burp/documentation/desktop/tools/sequencer/getting-started), is a tool for analyzing the quality of randomness in an application's sessions tokens and other important data items that are otherwise intended to be unpredictable. Some commonly analyzed items include:
+
+- Session tokens
+- Anti-CSRF (Cross-Site Request Forgery) tokens
+- Password reset tokens (sent with password resets that in theory uniquely tie users with their password reset requests)
+
+We'll take a quick peek at how we can use Sequencer to examine the session cookies which Juice Shop issues.
+
+Burp Suite reference documentation for Sequencer: [Link](https://portswigger.net/burp/documentation/desktop/tools/sequencer)
+
+
+   >#1	Switch over to the HTTP history sub-tab of Proxy. 
+   
+    ✅ No answer needed
+
+   >#2	We're going to dig for a response which issues a cookie. Parse through the various responses we've received from Juice Shop until you find one that includes a 'Set-Cookie' header. 
+   
+    ✅ No answer needed
+    
+   >#3	Once you've found a request response that issues a cookie, right-click on the request and select 'Send to Sequencer'.
+   
+    ✅ No answer needed
+    
+   >#4	Change over Sequencer and select 'Start live capture'   
+   
+    ✅ No answer needed
+   
+   >#5	Let Sequencer run and collect ~10,000 requests. Once it hits roughly that amount hit 'Pause' and then 'Analyze now'
+
+    ✅ No answer needed
+
+   >#6	Parse through the results. What is the effective estimated entropy measured in?
+
+    ✅ bits
+
+   >#7	In order to find the usable bits of entropy we often have to make some adjustments to have a normalized dataset. What item is converted in this process?
+   
+    ✅ token
+
+   >#8	Read through the remaining results of the token analysis
+
+    ✅ No answer needed
+    
+ ________________________________________________________________________________________________________________________________________________________________
+ 
+ 
+
+
+
+
+
+
