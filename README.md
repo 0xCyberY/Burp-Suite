@@ -14,7 +14,7 @@ The virtual machine used in this room (OWASP JuiceShop) can be installed from th
 
 Prior to attempting this room, I highly recommend checking out the ['Web Fundamentals'](https://tryhackme.com/room/webfundamentals) room by [NinjaJc01](https://tryhackme.com/p/NinjaJc01). If you are familiar with basic web request structure and SQL injection, you're already set!
   
-  <h3>#1	Read the overview and continue on into installation!</h3>
+>#1	Read the overview and continue on into installation!
   
  - [x] `No answer needed`
  
@@ -31,3 +31,7 @@ If you'll be installing Burp (as it's commonly referred to) from scratch, you'll
 We'll use the Burp Suite Community Edition throughout this lab, however, I'll be covering some paid features briefly as well to help you prepare for eventually using the Professional version.
 
 Burp Suite Getting Started Documentation: [Link](https://portswigger.net/burp/documentation/desktop/getting-started)
+
+>#1	If you'll be installing Burp (as it's commonly referred to) from scratch, you'll need to first visit this link: https://portswigger.net/burp/communitydownload
+
+
