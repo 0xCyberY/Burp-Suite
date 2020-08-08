@@ -97,5 +97,21 @@ Once this pops-up, click 'Temporary project' and then 'Next'.
    
     ✅ No answer needed
 
+  >#6	Now that we've started Burp, let's add an extension to our web browser to allow up to easily route or traffic through it! For this room, we'll be using 'FoxyProxy Standard' on Firefox.
+  
+  ![Image_foxyProxy](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/foxypeoxy.png)
+  
+ Navigate to the following link to install FoxyProxy Standard: [Link](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)
+
+Go ahead and install this now!
+
+    ✅ No answer needed
+    
+  >#7	Next, click on FoxyProxy among your extensions.
+  
+  ![Image_extensions](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/extensions.png)
+  
+  After that, click on 'Options'.
+
 
 
