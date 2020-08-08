@@ -699,12 +699,12 @@ You can find the Port Swigger Web Security Academy training here: [https://ports
 
 In addition to Port Swigger's training, SANS offers excellent web application pentesting courses. A few of these include SANS [SEC 542](https://www.sans.org/course/web-app-penetration-testing-ethical-hacking) and [SEC 642](https://www.sans.org/course/advanced-web-app-penetration-testing-ethical-hacking). Note, these training courses are paid and can be fairly pricy. That being said, they are of incredibly high quality and are worth checking out. 
 
-![Image_sans](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%2014%5D/sans.png)
+![Image_sans](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%2014%5D/sans3.jpg)
 
 
 Last but not least, you can keep learning with OWASP Juice Shop in its room here on TryHackMe! [Link](https://tryhackme.com/room/juiceshop)
 
-![Image_js](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%2014%5D/js.png)
+![Image_js](https://github.com/abdullah-baghuth/Burp-Suite/blob/master/%5BTask%2014%5D/js3.jpg)
 
 
    >#1	Check out the provided links and keep learning!
